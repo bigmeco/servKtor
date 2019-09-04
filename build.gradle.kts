@@ -20,6 +20,7 @@ application {
 repositories {
     mavenLocal()
     jcenter()
+    maven { url = uri("https://jitpack.io") }
     maven { url = uri("https://kotlin.bintray.com/ktor") }
     maven { url = uri("https://kotlin.bintray.com/kotlin-js-wrappers") }
 }
@@ -31,6 +32,9 @@ dependencies {
     compile("io.ktor:ktor-server-core:$ktor_version")
     compile("io.ktor:ktor-html-builder:$ktor_version")
     compile("org.jetbrains:kotlin-css-jvm:1.0.0-pre.31-kotlin-1.2.41")
+    compile("org.litote.kmongo:kmongo:3.11.0")
+    compile("org.litote.kmongo:kmongo-coroutine:3.11.0")
+    compile("com.github.Seik.kotlin-telegram-bot:dispatcher:0.3.8")
     compile("io.ktor:ktor-gson:$ktor_version")
     compile("io.ktor:ktor-client-core:$ktor_version")
     compile("io.ktor:ktor-client-core-jvm:$ktor_version")
